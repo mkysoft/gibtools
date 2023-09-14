@@ -1,0 +1,53 @@
+<CancelUserAccount xmlns="http://www.hr-xml.org/3" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" releaseID="releaseID0">
+<oa:ApplicationArea>
+<oa:Sender>
+<oa:LogicalID>9999999999</oa:LogicalID>
+</oa:Sender>
+<oa:Receiver/>
+<oa:CreationDateTime>2013-06-19T11:10:01</oa:CreationDateTime>
+<oa:Signature />
+</oa:ApplicationArea>
+<DataArea>
+<oa:Cancel/>
+<UserAccount>
+<UserID>9999999999</UserID>
+<PersonName>
+<FormattedName>e-Fatura Deneme A.Ş. 3</FormattedName>
+<oa:GivenName/>
+<MiddleName/>
+<FamilyName/>
+</PersonName>
+<UserRole>
+<RoleCode>GB</RoleCode>
+<RoleName>Gönderici Birim</RoleName>
+</UserRole>
+<AuthorizedWorkScope>
+<WorkScopeCode>urn:mail:defaultgb@gib.gov.tr</WorkScopeCode>
+<WorkScopeName>Gönderici Birim Etiketi</WorkScopeName>
+</AuthorizedWorkScope>
+<AccountConfiguration>
+<UserOptionCode>2</UserOptionCode>
+</AccountConfiguration>
+</UserAccount>
+<UserAccount>
+<UserID>9999999999</UserID>
+<PersonName>
+<FormattedName>e-Fatura Deneme A.Ş. 3</FormattedName>
+<oa:GivenName/>
+<MiddleName/>
+<FamilyName/>
+</PersonName>
+<UserRole>
+<RoleCode>PK</RoleCode>
+<RoleName>Posta Kutusu</RoleName>
+</UserRole>
+<AuthorizedWorkScope>
+<WorkScopeCode>urn:mail:defaultpk@gib.gov.tr</WorkScopeCode>
+<WorkScopeName>Posta Kutusu Birimi Etiketi</WorkScopeName>
+</AuthorizedWorkScope>
+<AccountConfiguration>
+<UserOptionCode>2</UserOptionCode>
+</AccountConfiguration>
+</UserAccount>
+</DataArea>
+</CancelUserAccount>

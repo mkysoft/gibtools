@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Musteriler>
+    <TEST>M1E1</TEST>
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default1gb@mkysoft.com</GB>
+    <PK>urn:mail:default1pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M1E2</TEST>
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default2gb@mkysoft.com</GB>
+    <PK>urn:mail:default2pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M1E2</TEST>    
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default3gb@mkysoft.com</GB>
+    <PK>urn:mail:default3pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E1</TEST>
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default4gb@mkysoft.com</GB>
+    <PK>urn:mail:default4pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default5gb@mkysoft.com</GB>
+    <PK>urn:mail:default5pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>0350715360</VKN>
+    <UNVAN>MKYSOFT ANONİM ŞİRKETİ</UNVAN>
+    <GB>urn:mail:default6gb@mkysoft.com</GB>
+    <PK>urn:mail:default6pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>1</TOKENDEVICE>
+    <TOKENNAME>ACS CCID USB Reader 1</TOKENNAME>
+    <TOKENSERIAL>0F1D92FF2700004C</TOKENSERIAL>
+    <TOKENPIN>580090</TOKENPIN>
+  </Musteriler>  
+  <Musteriler>
+    <TEST>M3E1</TEST>
+    <VKN>1234567802</VKN>
+    <UNVAN>Test Kurum İki</UNVAN>
+    <GB>urn:mail:default1gb@mkysoft.com</GB>
+    <PK>urn:mail:default1pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>296274-testkurum02@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>296274</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>1234567802</VKN>
+    <UNVAN>Test Kurum İki</UNVAN>
+    <GB>urn:mail:default2gb@mkysoft.com</GB>
+    <PK>urn:mail:default2pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>296274-testkurum02@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>296274</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>1234567802</VKN>
+    <UNVAN>Test Kurum İki</UNVAN>
+    <GB>urn:mail:default3gb@mkysoft.com</GB>
+    <PK>urn:mail:default3pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>296274-testkurum02@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>296274</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E1</TEST>
+    <VKN>1234567803</VKN>
+    <UNVAN>Test Kurum Üç</UNVAN>
+    <GB>urn:mail:default1gb@mkysoft.com</GB>
+    <PK>urn:mail:default1pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>295180-testkurum03@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>295180</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>1234567803</VKN>
+    <UNVAN>Test Kurum Üç</UNVAN>
+    <GB>urn:mail:default2gb@mkysoft.com</GB>
+    <PK>urn:mail:default2pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>295180-testkurum03@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>295180</TOKENPIN>
+  </Musteriler>
+  <Musteriler>
+    <TEST>M3E2</TEST>
+    <VKN>1234567803</VKN>
+    <UNVAN>Test Kurum Üç</UNVAN>
+    <GB>urn:mail:default3gb@mkysoft.com</GB>
+    <PK>urn:mail:default3pk@mkysoft.com</PK>
+    <ID>MKY2023000000001</ID>
+    <TOKENDEVICE>0</TOKENDEVICE>
+    <TOKENNAME>295180-testkurum03@test.com.tr.pfx</TOKENNAME>
+    <TOKENPIN>295180</TOKENPIN>
+  </Musteriler>
+</DocumentElement>

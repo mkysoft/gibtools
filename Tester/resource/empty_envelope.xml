@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:StandardBusinessDocument xsi:schemaLocation="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader PackageProxy_1_2.xsd" xmlns:sh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader" xmlns:ef="http://www.efatura.gov.tr/package-namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sh:StandardBusinessDocumentHeader>
+    <sh:HeaderVersion>1.2</sh:HeaderVersion>
+    <sh:Sender>
+      <sh:Identifier>GB</sh:Identifier>
+      <sh:ContactInformation>
+        <sh:Contact>Contact</sh:Contact>
+        <sh:ContactTypeIdentifier>UNVAN</sh:ContactTypeIdentifier>
+      </sh:ContactInformation>
+      <sh:ContactInformation>
+        <sh:Contact>CONTACT</sh:Contact>
+        <sh:ContactTypeIdentifier>VKN_TCKN</sh:ContactTypeIdentifier>
+      </sh:ContactInformation>
+    </sh:Sender>
+    <sh:Receiver>
+      <sh:Identifier>PK</sh:Identifier>
+      <sh:ContactInformation>
+        <sh:Contact>CONTACT</sh:Contact>
+        <sh:ContactTypeIdentifier>UNVAN</sh:ContactTypeIdentifier>
+      </sh:ContactInformation>
+      <sh:ContactInformation>
+        <sh:Contact>CONTACT</sh:Contact>
+        <sh:ContactTypeIdentifier>VKN_TCKN</sh:ContactTypeIdentifier>
+      </sh:ContactInformation>
+    </sh:Receiver>
+    <sh:DocumentIdentification>
+      <sh:Standard>UBLTR</sh:Standard>
+      <sh:TypeVersion>1.2</sh:TypeVersion>
+      <sh:InstanceIdentifier>INSTANCEIDENTIFIER</sh:InstanceIdentifier>
+      <sh:Type>TYPE</sh:Type>
+      <sh:CreationDateAndTime>2015-03-04T14:48:14</sh:CreationDateAndTime>
+    </sh:DocumentIdentification>
+    <sh:Manifest>
+      <sh:NumberOfItems>1</sh:NumberOfItems>
+      <sh:ManifestItem>
+        <sh:MimeTypeQualifierCode>application/xml</sh:MimeTypeQualifierCode>
+        <sh:UniformResourceIdentifier/>
+        <sh:Description></sh:Description>
+        <sh:LanguageCode>TR</sh:LanguageCode>
+      </sh:ManifestItem>
+    </sh:Manifest>
+  </sh:StandardBusinessDocumentHeader>
+  <ef:Package>
+    <Elements>
+      <ElementType>ELEMENTTYPE</ElementType>
+      <ElementCount>1</ElementCount>
+      <ElementList />
+    </Elements>
+  </ef:Package>
+</sh:StandardBusinessDocument>
