@@ -26,10 +26,11 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore Packages
-       run: nuget restore "Gib Tools.sln"
+      run: nuget restore "GIB Tools.sln"
 
     - name: Run tests
-       run: msbuild "Gib Tools.sln" -t:rebuild -property:Configuration=Debug
-       run: cd TesterTest
-       run: msbuild TesterTest.csproj
-       run: vstest.console bin\Debug\TesterTest.dll
+      run: |
+           msbuild "GIB Tools.sln" -t:rebuild -property:Configuration=Debug
+           cd TesterTest
+           msbuild TesterTest.csproj
+           vstest.console bin\Debug\TesterTest.dll
