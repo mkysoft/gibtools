@@ -26,7 +26,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore Packages
-       run: nuget restore GibTools.sln
+       run: nuget restore "Gib Tools.sln"
 
     - name: Run tests
        run: msbuild "Gib Tools.sln" -t:rebuild -property:Configuration=Debug
