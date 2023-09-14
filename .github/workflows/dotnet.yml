@@ -28,9 +28,12 @@ jobs:
     - name: Restore Packages
       run: nuget restore "GIB Tools.sln"
 
-    - name: Run tests
-      run: |
-           msbuild "GIB Tools.sln" -t:rebuild -property:Configuration=Debug
-           cd TesterTest
-           msbuild TesterTest.csproj
-           vstest.console bin\Debug\TesterTest.dll
+    - name: build debug
+      run: msbuild "GIB Tools.sln" -t:rebuild -property:Configuration=Debug
+
+    - name: run tests
+      uses: microsoft-approved-actions/vstest@master
+      with:
+        testAssembly: TesterTest.dll
+        searchFolder: bin\Debug\
+        runInParallel: true
