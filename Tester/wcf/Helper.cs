@@ -135,7 +135,7 @@ namespace com.mkysoft.gib.tester.wcf
 
         internal static void Log(string message)
         {
-            if (Thread.CurrentThread.IsBackground)
+            if (Thread.CurrentThread.IsBackground && Logger.IsHandleCreated)
             {
                 Logger.Invoke(new Action(() =>
                 {
