@@ -32,7 +32,7 @@ jobs:
       run: msbuild "GIB Tools.sln" -t:rebuild -property:Configuration=Debug
 
     - name: run tests
-      uses: microsoft-approved-actions/vstest@master
+      uses: microsoft/vstest-action@v1.0.0
       with:
         testAssembly: TesterTest.dll
         searchFolder: bin\Debug\
