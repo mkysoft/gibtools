@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using com.mkysoft.gib.signer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.mkysoft.gib.tester.test
@@ -100,7 +99,7 @@ namespace com.mkysoft.gib.tester.test
             var musteri = new types.Musteri();
             musteri.VKN = "1234567801";
             musteri.Unvan = "Test Kurum Bir";
-            musteri.TokenDevice = signer.enums.Device.pfx;
+            musteri.TokenDevice = xades.Enums.Device.PFX;
             musteri.TokenName = "937701-testkurum01@test.com.tr.pfx";
             musteri.TokenPin = "937701";
             musteri.Etiketler = new List<types.Etiket>();
@@ -129,7 +128,7 @@ namespace com.mkysoft.gib.tester.test
             var musteri = new types.Musteri();
             musteri.VKN = "1234567801";
             musteri.Unvan = "Test Kurum Bir";
-            musteri.TokenDevice = signer.enums.Device.pfx;
+            musteri.TokenDevice = xades.Enums.Device.PFX;
             musteri.TokenName = "937701-testkurum01@test.com.tr.pfx";
             musteri.TokenPin = "937701";
             musteri.Etiketler = new List<types.Etiket>();
@@ -160,7 +159,7 @@ namespace com.mkysoft.gib.tester.test
             {
                 VKN = "1234567801",
                 Unvan = "Test Kurum Bir",
-                TokenDevice = signer.enums.Device.pfx,
+                TokenDevice = xades.Enums.Device.PFX,
                 TokenName = "937701-testkurum01@test.com.tr.pfx",
                 TokenPin = "937701",
                 Etiketler = new List<types.Etiket>()
@@ -182,7 +181,7 @@ namespace com.mkysoft.gib.tester.test
             {
                 VKN = "1234567802",
                 Unvan = "Test Kurum İki",
-                TokenDevice = signer.enums.Device.pfx,
+                TokenDevice = xades.Enums.Device.PFX,
                 TokenName = "296274-testkurum02@test.com.tr.pfx",
                 TokenPin = "296274",
                 Etiketler = new List<types.Etiket>()

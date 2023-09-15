@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
-using com.mkysoft.gib.signer;
 using com.mkysoft.gib.tester.types;
 
 namespace com.mkysoft.gib.tester.helper
@@ -88,26 +87,14 @@ namespace com.mkysoft.gib.tester.helper
 
         public static byte[] Imzala(byte[] fatura, string device, string token, string serial, string pin)
         {
+            var deviceEnum = (xades.Enums.Device)Enum.Parse(typeof(xades.Enums.Device), device);
             int errcount = 0;
             while (errcount < 5)
             {
                 try
                 {
-                    var request = new SignRequest();
-                    request.Device = (signer.enums.Device)Enum.Parse(typeof(signer.enums.Device), device);
-                    request.SignType = signer.enums.SignType.xades;
-                    request.Token = new Token() { Name = token, Serial = serial };
-                    request.Pin = pin;
-                    var signInvoice = new SignInvoice(request, fatura);
-                    signInvoice.Sign();
-                    if (!signInvoice.IsSigned)
-                    {
-                        wcf.Helper.Log("[HATA] İmzalama: " + signInvoice.ErrorMsg);
-                        errcount++;
-                        Thread.Sleep(5000);
-                    }
-                    else
-                        return signInvoice.XmlData;
+                    errcount++;
+                    return xades.XmlSigner.Sign(deviceEnum, token, serial, pin, fatura, xades.Enums.SignatureParentElement.eInvoice);
                 } 
                 catch (Exception ex)
                 {

@@ -1,12 +1,10 @@
-﻿using com.mkysoft.gib.signer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using com.mkysoft.gib.signer.enums;
 
 namespace com.mkysoft.gib.tester.helper
 {
@@ -88,28 +86,16 @@ namespace com.mkysoft.gib.tester.helper
 
         public static byte[] Imzala(byte[] kullanici, string device, string token, string serial, string pin)
         {
-           return Imzala(kullanici, (signer.enums.Device)Enum.Parse(typeof(signer.enums.Device), device), token, serial, pin);
+           return Imzala(kullanici, (xades.Enums.Device)Enum.Parse(typeof(xades.Enums.Device), device), token, serial, pin);
         }
 
-        public static byte[] Imzala(byte[] kullanici, signer.enums.Device device, string token, string serial, string pin)
+        public static byte[] Imzala(byte[] kullanici, xades.Enums.Device device, string token, string serial, string pin)
         {
             int errcount = 0;
             while (errcount < 5)
             {
-                var request = new SignRequest();
-                request.Device = device;
-                request.SignType = signer.enums.SignType.xades;
-                request.Token = new Token() { Name = token, Serial = serial };
-                request.Pin = pin;
-                var signUser = new SignUser(request, kullanici);
-                signUser.Sign();
-                if (!signUser.IsSigned)
-                {
-                    wcf.Helper.Log("[HATA] İmzalama: " + signUser.ErrorMsg);
-                    errcount++;
-                }
-                else
-                    return signUser.XmlData;
+                errcount++;
+                return xades.XmlSigner.Sign(device, token, serial, pin, kullanici, null);
             }
             throw new Exception("İmzalama hatası!");
         }

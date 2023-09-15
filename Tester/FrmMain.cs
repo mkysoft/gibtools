@@ -1,5 +1,4 @@
-﻿using com.mkysoft.gib.signer;
-using com.mkysoft.helper;
+﻿using com.mkysoft.helper;
 using com.mkysoft.gib.tester.helper;
 using System;
 using System.Collections.Generic;
@@ -62,7 +61,7 @@ namespace com.mkysoft.gib.tester
             wcf.Helper.Start(lbLog, pbIs);
             dgZarflar.DataSource = bsZarflar.DataSource = wcf.Helper.dtZarflar;
             dgBelgeler.DataSource = bsBelgeler.DataSource = wcf.Helper.dtBelgeler;
-            cmbDevice.Items.AddRange(Enum.GetNames(typeof(signer.enums.Device)));
+            cmbDevice.Items.AddRange(Enum.GetNames(typeof(xades.Enums.Device)));
             LoadConfig();
         }
 
@@ -78,7 +77,7 @@ namespace com.mkysoft.gib.tester
             dtMusteriler.Columns.Add("GB", typeof(string));
             dtMusteriler.Columns.Add("PK", typeof(string));
             dtMusteriler.Columns.Add("ID", typeof(string));
-            dtMusteriler.Columns.Add("TOKENDEVICE", typeof(signer.enums.Device));
+            dtMusteriler.Columns.Add("TOKENDEVICE", typeof(xades.Enums.Device));
             dtMusteriler.Columns.Add("TOKENNAME", typeof(string));
             dtMusteriler.Columns.Add("TOKENSERIAL", typeof(string));
             dtMusteriler.Columns.Add("TOKENPIN", typeof(string));
@@ -485,7 +484,7 @@ namespace com.mkysoft.gib.tester
         private types.Musteri OkuMusteri(DataRow row)
         {
             var musteri = new types.Musteri();
-            musteri.TokenDevice = (signer.enums.Device)row["TOKENDEVICE"];
+            musteri.TokenDevice = (xades.Enums.Device)row["TOKENDEVICE"];
             musteri.TokenName = row["TOKENNAME"].ToString();
             musteri.TokenSerial = row["TOKENSERIAL"].ToString();
             musteri.TokenPin = row["TOKENPIN"].ToString();
