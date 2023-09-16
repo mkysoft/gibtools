@@ -87,14 +87,18 @@ namespace com.mkysoft.gib.tester.helper
 
         public static byte[] Imzala(byte[] fatura, string device, string token, string serial, string pin)
         {
-            var deviceEnum = (xades.Enums.Device)Enum.Parse(typeof(xades.Enums.Device), device);
+            return Imzala(fatura, (xades.Enums.Device)Enum.Parse(typeof(xades.Enums.Device), device), token, serial, pin);
+        }
+
+        public static byte[] Imzala(byte[] fatura, xades.Enums.Device device, string token, string serial, string pin)
+        {
             int errcount = 0;
             while (errcount < 5)
             {
                 try
                 {
                     errcount++;
-                    return xades.XmlSigner.Sign(deviceEnum, token, serial, pin, fatura, xades.Enums.SignatureParentElement.eInvoice);
+                    return xades.XmlSigner.Sign(device, token, serial, pin, fatura, xades.Enums.SignatureParentElement.eInvoice);
                 } 
                 catch (Exception ex)
                 {
