@@ -266,7 +266,7 @@
             this.txtTokenPin.Size = new System.Drawing.Size(190, 20);
             this.txtTokenPin.TabIndex = 5;
             this.txtTokenPin.Tag = "Config";
-            this.txtTokenPin.Text = "937701";
+            this.txtTokenPin.Text = "745418";
             // 
             // label9
             // 
@@ -284,7 +284,7 @@
             this.txtTokenName.Size = new System.Drawing.Size(190, 20);
             this.txtTokenName.TabIndex = 1;
             this.txtTokenName.Tag = "Config";
-            this.txtTokenName.Text = "937701-testkurum01@test.com.tr.pfx";
+            this.txtTokenName.Text = "test1@test.com_745418.pfx";
             // 
             // label11
             // 

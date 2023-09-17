@@ -42,7 +42,7 @@ namespace com.mkysoft.gib.tester.test
             belge.PK = "defaultgb";
             belge.AliciUnvan = "MKYSOFT ANONİM ŞİRKETİ";
             var data = helper.Cevap.Fatura(belge, types.Enums.Cevap.KABUL, out string belgeEttn);
-            data = helper.Fatura.Imzala(data, "937701-testkurum01@test.com.tr.pfx", null, null, "937701");
+            data = helper.Fatura.Imzala(data, xades.Enums.Device.PFX, "test1@test.com_745418.pfx", null, "745418");
             File.WriteAllBytes(belge.BelgeEttn, data);
         }
 

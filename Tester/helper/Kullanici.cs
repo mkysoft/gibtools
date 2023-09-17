@@ -95,7 +95,7 @@ namespace com.mkysoft.gib.tester.helper
             while (errcount < 5)
             {
                 errcount++;
-                return xades.XmlSigner.Sign(device, token, serial, pin, kullanici, null);
+                return xades.XmlSigner.Sign(device, token, serial, pin, kullanici, xades.Enums.SignatureParentElement.user);
             }
             throw new Exception("İmzalama hatası!");
         }
